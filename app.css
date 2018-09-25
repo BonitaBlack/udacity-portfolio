@@ -1,158 +1,188 @@
-*, 
-{
-	box-sizing: inherit;
-}
-head
-{
-	display: none;
-}
-html
-{
-	font-size: 100%;
-	font-family: sans-serif;
-	line-height: 1.15;
-}
+* {box-sizing: border-box;}
+
 body
 {
-	max-width: 960px;
-	margin: auto;
-	padding: 0;
-	font-family: Helvatica, Roboto, Arial, sans-serif;
-	font-weight: normal;
-	line-height: normal;
-	color: #2d3c49;
-
+  margin: 10px;
+  font-family: 'Metal Mania', cursive, Arial, Helvetica, sans-serif;
 }
-.header 
+img
 {
-	align-items: center;
-	justify-content: space-between;
-	max-width: 75rem;
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	flex-flow:row wrap;
-
+  max-width: 99%;
 }
-header
+.header
 {
-	text-align: right;
-	padding-bottom: 0em;
-
-}
-.logo
-{
-	height: 25%;
-  
-}
-.logo img
-{
-	display: inline-block;
-	max-width: 200px;
-	height: 100px;
-
-}
-.portfolio_owner
-{
-	padding-right:0.9375rem;
-	padding-left: 0.9375rem;
-}
-.myname
-{
-	font-family: sans-serif;
-	font-weight: 100;
-	color:#2d3c49;
-
-}
-h1
-{
-	line-height: 1.4;
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-	font-style: normal;
-
-}
-.skills
-{
-	font-family: sans-serif;
-	font-weight: 400;
-	color:#2d3c49;
-}
-span
-{
-	max-width: 100%;
-	justify-content: center;
-	
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	flex-flow: row wrap;
-
-
-}
-.mainimage img
-{
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.content 
-{
-	margin-top: 2em;
-	max-width: 75em;
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	flex-flow: row wrap;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
 }
 
-.work
+.header a
 {
-	justify-content: space-between;
-	flex: 0 0 100%;
-	max-width: 100%
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
 }
-.work-title
+
+.header a.logo
 {
-	font-family: sans-serif;
-	font-weight: 300;
-	color:#7d97ad;
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-	padding-left: 0.5em;
+  font-size: 25px;
+  font-weight: bold;
 }
+
+.header a:hover
+{
+  background-color: #fff6e6;
+  color: black;
+}
+
+.header a:active
+{
+  background-color: #ff99ff;
+  color: white;
+}
+
+.header-right
+{
+  float: right;
+}
+
+@media screen and (max-width: 500px)
+{
+  .header a
+  {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .header-right
+  {
+    float: none;
+  }
+}
+
+
+.name
+{
+  width: 66%;
+  text-align: right;
+}
+#content
+{
+  background-color: black;
+}
+.matrix
+
+  {
+    width: 100%;
+    max-height: 200px;
+}
+
+
 .featured
 {
-	margin-bottom: 0.5em;
-	padding:0;
+  text-align: left;
+  color: white;
+  margin-left: 10px;
+
 }
-.workpic
+.work
 {
-	display: block;
-	margin: auto;
-	width: 96%;
-}
-h3
-{
-	font-family: sans-serif;
-	font-weight: 400;
-	margin-top: 1em;
-	text-align: center;
-	line-height: 2.4;
-	margin-bottom: 0.5rem;
-	color: inherit;
-	text-rendering: optimizeLegibility;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
 }
 p
 {
-	margin-bottom: 1rem;
-	font-size: inherit;
-	line-height: 1.6;
-	text-rendering: optimizeLegibility;
-	margin: 0;
-	padding: 0;
-	display: block;
-  vertical-align: middle;
-  text-align: center;
+    text-align: center;
+}
+@media screen and (min-width: 450px)
+{
+  .work
+  {
+    margin: 50px;
+  }
+
+
+  .smfooter
+  {
+    align-items: center;
+    padding: 10px;
+
+  }
+  .fa
+    {
+      margin-left: 50px;
+
+    }
+}
+@media screen and (min-width: 600px)
+{
+  .work
+  {
+    margin-left: 100px;
+  }
+  p
+  {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 800px)
+{
+  body
+  {
+    margin: 50px;
+  }
+  .work
+  {
+    margin-left: 50px;
+  }
+  .fa
+  {
+    margin-left: 100px;
+  }
+
+}
+@media screen and (min-width: 1200px)
+{
+
+  .sunflower
+  {
+    margin-left: 100px;
+  }
+  .fa
+  {
+    margin-left: 300px;
+  }
+  h1
+  {
+    font-size: 100px;
+  }
+  .header a
+  {
+    font-size: 50px;
+    margin-right: 150px;
+    color: #00e64d;
+  }
+  h2
+  {
+    font-size: 50px;
+  }
+  p
+  {
+    font-size: 35px;
+  }
+  .matrix
+  {
+    max-height: 300px;
+  }
+  body
+  {
+    margin: 100px;
+  }
+
 }
